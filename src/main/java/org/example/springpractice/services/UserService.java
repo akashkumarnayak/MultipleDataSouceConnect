@@ -10,13 +10,12 @@ import org.springframework.stereotype.Service;
 public class UserService implements IUserService {
 
     private final UserRepo userRepo;
-    private final ProductRepo productRepo;
 
     @Autowired
-    public UserService(UserRepo userRepo, ProductRepo productRepo) {
+    public UserService(UserRepo userRepo) {
 
         this.userRepo = userRepo;
-        this.productRepo = productRepo;
+
     }
 
 
